@@ -48,13 +48,13 @@ export function chance(p: number): boolean {
   return rand() < p;
 }
 
-export function zeroPad(n: number, width: number): string {
-  return String(n).padStart(width, '0');
+export function zeroPad(str: string, width: number): string {
+  return str.padStart(width, '0');
 }
 
 export function randHex(bytes: number): string {
   return Array.from({ length: bytes }, () =>
-    zeroPad(randInt(0, 255).toString(16), 2)
+    randInt(0, 255).toString(16).padStart(2, '0')
   ).join('');
 }
 
@@ -63,5 +63,7 @@ export function randIPv4(): string {
 }
 
 export function randMAC(): string {
-  return Array.from({ length: 6 }, () => zeroPad(randInt(0, 255).toString(16), 2)).join(':');
+  return Array.from({ length: 6 }, () =>
+    randInt(0, 255).toString(16).padStart(2, '0')
+  ).join(':');
 }

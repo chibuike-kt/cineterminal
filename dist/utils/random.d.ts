@@ -1,0 +1,12 @@
+export declare function createSeededRandom(seed: number): () => number;
+export declare const rand: () => number;
+export declare function randInt(min: number, max: number): number;
+export declare function randFloat(min: number, max: number): number;
+export declare function pick<T>(arr: T[]): T;
+export declare function pickN<T>(arr: T[], n: number): T[];
+export declare function weightedPick<T>(items: T[], weights: number[]): T;
+export declare function chance(p: number): boolean;
+export declare function zeroPad(str: string, width: number): string;
+export declare function randHex(bytes: number): string;
+export declare function randIPv4(): string;
+export declare function randMAC(): string;

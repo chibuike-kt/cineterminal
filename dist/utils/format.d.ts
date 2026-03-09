@@ -1,0 +1,10 @@
+export declare function visibleLength(str: string): number;
+export declare function truncate(str: string, max: number, ellipsis?: string): string;
+export declare function padLeft(str: string, width: number, char?: string): string;
+export declare function padRight(str: string, width: number, char?: string): string;
+export declare function center(str: string, width: number, char?: string): string;
+export declare function formatTime(date?: Date): string;
+export declare function formatTimeMs(date?: Date): string;
+export declare function formatBytes(bytes: number): string;
+export declare function repeat(char: string, n: number): string;
+export declare function progressBar(percent: number, width: number, filled?: string, empty?: string): string;
