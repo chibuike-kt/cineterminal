@@ -1,0 +1,30 @@
+{
+  "name": "cineterminal",
+  "version": "0.1.0",
+  "description": "Cinematic terminal experience engine",
+  "main": "dist/cli.js",
+  "bin": {
+    "cineterminal": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js",
+    "clean": "rmdir /s /q dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.25",
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
