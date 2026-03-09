@@ -4,8 +4,13 @@ export declare class BreachScene extends BaseScene {
     private streams;
     private breachProgress;
     private breachPhase;
+    private globeState;
     mount(): void;
-    private _startShellInLog;
+    private _buildLayout;
+    private _startGlobeAnimation;
+    private _triggerLockOn;
+    private _startLockSequence;
+    private _renderGlobeFrame;
     private _startProgressAnimation;
     unmount(): void;
 }
